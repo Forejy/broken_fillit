@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "grid.h"
-#include "libft.h"
+#include "header.h"
+
 
 void	print_grid(t_grid *grid)
 {

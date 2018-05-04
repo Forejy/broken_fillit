@@ -10,10 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "check_piece.h"
-#include "errors.h"
-#include "libft.h"
-#include "piece.h"
+#include "header.h"
 
 static void		get_elems_positions(char const *piece, t_pos *pos_array)
 {

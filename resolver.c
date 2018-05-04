@@ -10,10 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "resolver.h"
+#include "header.h"
 #include <stdlib.h>
-#include "grid.h"
-#include "errors.h"
 
 static int		is_solved(char **grid, char grid_size, t_piece *piece_array)
 {

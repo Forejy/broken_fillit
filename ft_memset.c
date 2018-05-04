@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.c                                           :+:      :+:    :+:   */
+/*   memset.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tdarchiv <tdarchiv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tdarchiv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/13 12:58:59 by tdarchiv          #+#    #+#             */
+/*   Created: 2018/04/05 12:48:35 by tdarchiv          #+#    #+#             */
 /*   Updated: 2018/04/28 17:18:14 by tdarchiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-#include <stdlib.h>
+# include <stddef.h>
 
-void	exit_with_msg(char const *message)
+void	*ft_memset(void *dest, int value, size_t count)
 {
-	ft_putendl(message);
-	exit(0);
+	size_t i;
+
+	i = 0;
+	while (i < count)
+	{
+		((char*)dest)[i] = (unsigned char)(value);
+		i++;
+	}
+	return (dest);
 }

@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "grid.h"
-#include "errors.h"
-#include "libft.h"
+#include "header.h"
 #include <stddef.h>
 #include <stdlib.h>
 

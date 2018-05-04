@@ -10,13 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "reader.h"
-#include "check_piece.h"
-#include "errors.h"
-#include "piece.h"
-#include "resolver.h"
+#include "header.h"
 #include <fcntl.h>
-#include "libft.h"
 
 static void		print_usage(void)
 {

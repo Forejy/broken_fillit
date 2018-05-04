@@ -8,17 +8,14 @@ SRCS += main.c
 SRCS += piece.c
 SRCS += reader.c
 SRCS += resolver.c
+SRCS += ft_putchar.c
+SRCS += ft_putendl.c
+SRCS += ft_memset.c
+SRCS += ft_memcpy.c
+SRCS += ft_strlen.c
 
-LIB_FILES += ft_putchar.c
-LIB_FILES += ft_putendl.c
-LIB_FILES += ft_memset.c
-LIB_FILES += ft_memcpy.c
-LIB_FILES += ft_strlen.c
-
-LIB_SRCS += $(addprefix libft/, $(LIB_FILES))
 
 OBJS =  $(SRCS:.c=.o)
-OBJS += $(LIB_SRCS:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
@@ -28,7 +25,7 @@ $(NAME) : $(OBJS)
 	gcc -o $(NAME) $(OBJS)
 
 %.o : %.c
-	gcc $(FLAGS) -I libft -o $@ -c $^
+	gcc $(FLAGS) -o $@ -c $^
 
 clean :
 	rm -f $(OBJS)

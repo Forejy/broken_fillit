@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "piece.h"
-#include "errors.h"
-#include "libft.h"
+#include "header.h"
 #include <stdlib.h>
 
 static void			normalize_positions(t_piece *piece, t_pos origin)
