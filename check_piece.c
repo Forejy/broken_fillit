@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "fillit.h"
 
 static void		get_elems_positions(char const *piece, t_pos *pos_array)
 {

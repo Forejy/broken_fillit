@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "fillit.h"
 #include <stdlib.h>
 
 static int		is_solved(char **grid, char grid_size, t_piece *piece_array)
