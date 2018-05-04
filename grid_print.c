@@ -6,12 +6,11 @@
 /*   By: tdarchiv <tdarchiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/18 16:37:26 by tdarchiv          #+#    #+#             */
-/*   Updated: 2018/04/28 17:18:14 by tdarchiv         ###   ########.fr       */
+/*   Updated: 2018/05/04 14:07:55 by tdarchiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
-
+#include "fillit.h"
 
 void	print_grid(t_grid *grid)
 {

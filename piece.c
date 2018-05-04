@@ -6,14 +6,14 @@
 /*   By: tdarchiv <tdarchiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 14:49:25 by tdarchiv          #+#    #+#             */
-/*   Updated: 2018/04/28 17:18:14 by tdarchiv         ###   ########.fr       */
+/*   Updated: 2018/05/04 14:07:55 by tdarchiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "fillit.h"
 #include <stdlib.h>
 
-static void			normalize_positions(t_piece *piece, t_pos origin)
+static void		normalize_positions(t_piece *piece, t_pos origin)
 {
 	piece->pos_array[0] = POS_SUBSTRACT(piece->pos_array[0], origin);
 	piece->pos_array[1] = POS_SUBSTRACT(piece->pos_array[1], origin);
@@ -21,7 +21,7 @@ static void			normalize_positions(t_piece *piece, t_pos origin)
 	piece->pos_array[3] = POS_SUBSTRACT(piece->pos_array[3], origin);
 }
 
-static void			get_min_and_max(t_piece piece, t_pos *min_ptr, t_pos *max_ptr)
+static void		get_min_and_max(t_piece piece, t_pos *min_ptr, t_pos *max_ptr)
 {
 	int		i;
 	t_pos	min;
@@ -42,7 +42,7 @@ static void			get_min_and_max(t_piece piece, t_pos *min_ptr, t_pos *max_ptr)
 	*max_ptr = max;
 }
 
-static t_piece		create_piece(const char *piece_string)
+static t_piece	create_piece(const char *piece_string)
 {
 	int		i;
 	int		e;
@@ -68,7 +68,7 @@ static t_piece		create_piece(const char *piece_string)
 	return (piece);
 }
 
-t_piece_list		*create_piece_list(char *file)
+t_piece_list	*create_piece_list(char *file)
 {
 	int				i;
 	t_piece_list	*list;

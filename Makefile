@@ -8,12 +8,7 @@ SRCS += main.c
 SRCS += piece.c
 SRCS += reader.c
 SRCS += resolver.c
-SRCS += ft_putchar.c
-SRCS += ft_putendl.c
-SRCS += ft_memset.c
-SRCS += ft_memcpy.c
-SRCS += ft_strlen.c
-
+SRCS += libft.c
 
 OBJS =  $(SRCS:.c=.o)
 
@@ -24,6 +19,8 @@ all: $(NAME)
 $(NAME) : $(OBJS)
 	gcc -o $(NAME) $(OBJS)
 
+# $^ is the dependencies of the rule
+# $@ is the name of the rule
 %.o : %.c
 	gcc $(FLAGS) -o $@ -c $^
 
@@ -35,5 +32,3 @@ fclean : clean
 
 re : fclean all
 
-# $^ is the dependencies of the rule
-# $@ is the name of the rule
